@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\d22rest.props" />
+</Project>

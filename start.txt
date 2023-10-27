@@ -1,0 +1,14 @@
+Dockerfile in project
+
+docker build -t d22rest -f Dockerfile .
+
+docker run --rm --name d22 -p 5000:5986 d22rest
+
+---------------
+
+Dockerfile in project root
+
+docker build -t d22rest2 -f Dockerfile .
+
+docker run --rm --name d22-2 -p 5000:5986 d22rest2
+
