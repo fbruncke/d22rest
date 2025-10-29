@@ -5,10 +5,72 @@ docker build -t d22rest -f Dockerfile .
 docker run --rm --name d22 -p 5000:5986 d22rest
 
 ---------------
+https://d22rest.onrender.com/student/3fa85f64-5717-4562-b3fc-2c963f66afa7
 
-Dockerfile in project root
+https://www.guru99.com/jmeter-performance-testing.html
 
-docker build -t d22rest2 -f Dockerfile .
+---------------
 
-docker run --rm --name d22-2 -p 5000:5986 d22rest2
+MongoDB
+
+
+
+docker run -d --name mongoHost -p 27017:27017 -v /home/fhaDB/mongo:/data/db mongo:7
+
+
+-------------------
+implementation
+
+Install-Package MongoDB.Driver
+
+[BsonId]        
+public Guid Id { get; set; }
+
+var mc = new MongoClient("mongodb://localhost:27017");
+var mongoDB = mc.GetDatabase(<DatabaseName>);
+_std = mongoDB.GetCollection<Student>(<CollectionName>);
+_std.Insert(<StudentObj>);
+
+
+-------------------
+docker-Compose up
+
+bridge version names
+
+depends_on
+
+version 3 support docker swarm
+
+build and run
+docker-compose build .
+docker-compose up
+
+build: ./folderName	#will use the Dockerfile of this folder to build an image
+
+image: iamgeName	#use existing image file / or pull first
+
+overwrite appsettings
+https://github.com/lbazetto/DockerEnvironmentVariablesDotNet
+
+environment variable example:
+
+{
+ "grpcoption": {
+    "serveraddress": "oldurl"
+  },
+}
+now i can modify it by -e command
+
+docker run -e "grpcoption:serveraddress=newurl"  [imagename]
+
+
+Example of env variables winth .net core API
+https://stackup.hashnode.dev/connect-to-mongodb-redis-postgresql-docker-containers-from-aspnet-core
+
+
+------------
+intro to docker-compose
+https://docs.docker.com/compose/gettingstarted/
+
+
 

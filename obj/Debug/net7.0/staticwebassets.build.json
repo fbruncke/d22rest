@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "QpjpdlW/2vRXZSqiqfjQYDIF0A0tck69TK3sqztp5L4=",
+  "Hash": "593XBkecePxGJlzQbRUInSIKdZqmSt/Csywd0P8E5U4=",
   "Source": "d22rest",
   "BasePath": "_content/d22rest",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

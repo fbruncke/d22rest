@@ -1,0 +1,14 @@
+﻿namespace d22rest
+{
+    public class D22RestDatabase
+    {
+        public string ConnectionString { get; set; } = null!;
+
+        public string DatabaseName { get; set; } = null!;      
+
+        public string StudentsCollectionName { get; set; } = null!;
+
+        public string TestENVVar { get; set; } = null!;
+        
+    }
+}
